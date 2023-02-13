@@ -1,8 +1,14 @@
-﻿
-float f = 1.25F;
+﻿// casting implicito
+//se il tipo di destinazione è piu capiente delll'iniziale non c'è perdita di precisione, per es.
+//int -> double
 double d = 130.78;
-decimal dm = 1500.456m;
-double ne = 5e-7; //5*10-7
-var s = "type inference";
-var b = false;
-Console.WriteLine($" f = {f}\n d = {d}\n dm = {dm}\n ne = {ne}\n s = {s}\n b = {b}\n");
+int a = 5 + (int)d;
+Console.WriteLine($"implicito = {a}");
+
+// casting esplicito
+//qui dichiaro, la variabile in cui voglio che venga convertita. Bisogna stare accorti solo per un 
+//problema di overflow.
+//Non è possibile convertire un intero in una stringa
+double dd = 130.78;
+int aa = 5 + (int)d;
+Console.WriteLine($"esplicito = {aa}");
