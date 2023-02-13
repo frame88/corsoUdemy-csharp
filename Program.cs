@@ -1,29 +1,27 @@
 ﻿using System;
 
-namespace Conversione 
+namespace Primo 
 {
     class Program
     {
         static void Main(string[] args)
         {   
-            //valori ammessi sono i bool, string, tutti gli int, enumerazioni
-            int myvar = 10;
 
-            switch(myvar) {
-                case10: 
-                    Console.WriteLine("Valore 10");
-                    break;
-                case20: 
-                    Console.WriteLine("Valore 20");
-                    break;
-                case30: 
-                    Console.WriteLine("Valore 30");
-                    break;
-                default: 
-                    Console.WriteLine("Un altro valore!");
-                    break;
+            Console.Write("Scrivi qualcosa: ");
+            string s = Console.ReadLine();
+
+            if ( s == "primo") {
+                Console.WriteLine("Hai scritto primo!");
             }
 
+            switch(s) {
+                case "primo":
+                Console.WriteLine("Hai scritto primo!");
+                break;
+                default:
+                Console.WriteLine("Non hai scritto primo!");
+                break;
+            }
         }
     }
 }
