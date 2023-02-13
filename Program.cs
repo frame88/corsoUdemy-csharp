@@ -6,19 +6,11 @@ namespace Primo
     {
         static void Main(string[] args)
         {   
-            int x = 0;
+            //dichiarazione di un array di 10elementi
+            int[] x = new int[10]; 
 
-            // WHILE
-            while (x > 0) {
-                // blocco codice
-            }
-
-            // Do-WHILE
-            do {
-                //blocco codice
-            } while (x > 0);
-            
-
+            //array multidimensionale 3x3
+            int[,] y = new int[3,3]; 
         }
     }
 }
