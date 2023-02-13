@@ -6,15 +6,24 @@ namespace Conversione
     {
         static void Main(string[] args)
         {   
-            int temperatura = 20;
+            //valori ammessi sono i bool, string, tutti gli int, enumerazioni
+            int myvar = 10;
 
-            if (temperatura > 25){
-                Console.WriteLine($"fa caldo");
-            } else if (temperatura < 15) {
-                Console.WriteLine($"Freddo");        
-            } else {
-                Console.WriteLine("Si sta bene");        
+            switch(myvar) {
+                case10: 
+                    Console.WriteLine("Valore 10");
+                    break;
+                case20: 
+                    Console.WriteLine("Valore 20");
+                    break;
+                case30: 
+                    Console.WriteLine("Valore 30");
+                    break;
+                default: 
+                    Console.WriteLine("Un altro valore!");
+                    break;
             }
+
         }
     }
 }
