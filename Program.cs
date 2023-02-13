@@ -1,14 +1,11 @@
-﻿// casting implicito
-//se il tipo di destinazione è piu capiente delll'iniziale non c'è perdita di precisione, per es.
-//int -> double
-double d = 130.78;
-int a = 5 + (int)d;
-Console.WriteLine($"implicito = {a}");
+﻿//classe convert converte i tipi, e offre numerosi metodi per ogni tipo
+//Convert.ToBoolean(Int32)
+//Convert.ToChar(Int16)
+//Convert.ToDouble(String)
 
-// casting esplicito
-//qui dichiaro, la variabile in cui voglio che venga convertita. Bisogna stare accorti solo per un 
-//problema di overflow.
-//Non è possibile convertire un intero in una stringa
-double dd = 130.78;
-int aa = 5 + (int)d;
-Console.WriteLine($"esplicito = {aa}");
+using System;
+
+int a = 150;
+string s = Convert.ToString(a);
+
+Console.WriteLine(s);
