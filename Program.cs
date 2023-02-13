@@ -1,11 +1,26 @@
-﻿//classe convert converte i tipi, e offre numerosi metodi per ogni tipo
-//Convert.ToBoolean(Int32)
-//Convert.ToChar(Int16)
-//Convert.ToDouble(String)
+﻿using System;
 
-using System;
+namespace Conversione 
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {   
+            int x = 10;
+            double y = x;
 
-int a = 150;
-string s = Convert.ToString(a);
+            float x1 = 12000f;
+            int y1 = (int)x1;
 
-Console.WriteLine(s);
+            int y2 = y1++;
+            
+            string z = "12345";
+            int x2 = Convert.ToInt32(z);
+
+            Console.WriteLine($"x = {x} y = {y}");
+            Console.WriteLine($"x1 = {x1} y1 = {y1} ");
+            Console.WriteLine($"y2 = {y2}");
+            Console.WriteLine($"z = {z} x2 = {x2}");
+        }
+    }
+}
