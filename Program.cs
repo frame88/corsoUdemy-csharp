@@ -1,4 +1,4 @@
-﻿// stampa di una stringa
+﻿
 float f = 1.25F;
 double d = 130.78;
 decimal dm = 1500.456m;
