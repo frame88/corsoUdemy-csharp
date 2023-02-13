@@ -6,22 +6,19 @@ namespace Primo
     {
         static void Main(string[] args)
         {   
+            int x = 0;
 
-            Console.Write("Scrivi qualcosa: ");
-            string s = Console.ReadLine();
-
-            if ( s == "primo") {
-                Console.WriteLine("Hai scritto primo!");
+            // WHILE
+            while (x > 0) {
+                // blocco codice
             }
 
-            switch(s) {
-                case "primo":
-                Console.WriteLine("Hai scritto primo!");
-                break;
-                default:
-                Console.WriteLine("Non hai scritto primo!");
-                break;
-            }
+            // Do-WHILE
+            do {
+                //blocco codice
+            } while (x > 0);
+            
+
         }
     }
 }
